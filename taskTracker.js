@@ -1,4 +1,4 @@
- var toPopulate = [{
+ var initialData = [{
     "name": "Test Task #1",
     "date": "12/01/2012",
     "assigned": "John Doe"
@@ -28,8 +28,8 @@
     "assigned": "John Doe"
   }];
 
-  function pageLoad(toPopulate) {
-    toPopulate.forEach(function(task) {
+  function pageLoad(initialData) {
+    initialData.forEach(function(task) {
       var taskItem = "<div class='task-item'><h4 class='task-name'>" + task.name + "</h4><h4 class='task-date'>" + task.date + "</h4><h4 class='task-assigned'>" + task.assigned + "</h4></div>";
       $(".task-wrapper").prepend(taskItem);
     });
@@ -54,7 +54,7 @@ function addTask(){
   
 $(document).ready(function() {
  
-  pageLoad(toPopulate);
+  pageLoad(initialData);
   
   $("#task").on('submit',function(event){
    event.preventDefault();

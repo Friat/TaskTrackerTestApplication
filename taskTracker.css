@@ -1,4 +1,4 @@
-.wrapper {
+.container {
   width: 800px;
   min-height: 638px;
   border-color: #e2e2e2;
@@ -36,7 +36,7 @@ section {
   border-style: solid;
 }
 
-.instruction {
+.creatTask {
   font-family: Georgia, Times, Times New Roman, Serif;
   font-weight: bold;
   font-size: 18px;
@@ -49,7 +49,7 @@ form {
   font-size: 14px;
 }
 
-.form-enter {
+.enter {
   width: 320px;
   height: 40px;
   border-radius: 5px;
@@ -78,7 +78,7 @@ form {
   font-size: 18px;
   margin-left: 31px;
 }
-.task-wrapper {
+.task-container {
   width: 350px;
   height: auto;
   border-style: solid;
