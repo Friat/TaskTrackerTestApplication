@@ -37,12 +37,21 @@
 
 function addTask(){
   var name = $(".name").val();
-  var date = $(".date").val();
+  var date = getFormatedDate($(“.date”).val());
   var assigned = $(".assigned").val();
   var taskItem = "<div class='task-item'><h4 class='task-name'>" + name + "</h4><h4 class='task-date'>" + date + "</h4><h4 class='task-assigned'>" + assigned + "</h4></div>";
   $(".task-wrapper").prepend(taskItem); 
 };
 
+  function getFormatedDate(date){
+    var dateParts = _date.split("-");
+    var day = dateParts[2];
+    var month = dateParts[1];
+    var year = dateParts[0];
+
+    return month + "/" + day + "/" + year;
+  };
+  
 $(document).ready(function() {
  
   pageLoad(toPopulate);
