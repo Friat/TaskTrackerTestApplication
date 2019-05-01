@@ -1,8 +1,8 @@
 <div class="wrapper">
   <header>
-	<link rel="stylesheet" href="C:/Users/Fri4A/Desktop/Front End Developer Exercise 3/Task_Tracker_Test_Application/taskTracker.css">
+	<link rel="stylesheet" href="taskTracker.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-	<script type="text/javascript" src="C:/Users/Fri4A/Desktop/Front End Developer Exercise 3/Task_Tracker_Test_Application/taskTracker.js"></script>
+	<script type="text/javascript" src="taskTracker.js"></script>
     <h1 class="title">Task Tracker</h1>
     <p class="version">v2.0</p>
   </header>
@@ -10,13 +10,13 @@
     <h2 class="instruction">Create a Task</h2>
     <form id="task">
       <label class="form-label">Task Name</label><br>
-      <input class="form-enter name" type="text" name="name">
+      <input class="form-enter name" type="text" name="name" required>
       <br>
-      <label class="form-label">Date</label><br>
-      <input class="form-enter date" type="text" name="date">
+      <label class="form-label" required>Date</label><br>
+      <input class="form-enter date" type="date" name="date" required>
       <br>
-      <label class="form-label">Assigned To</label><br>
-      <input class="form-enter assigned" type="text" name="assigned">
+      <label class="form-label" required >Assigned To</label><br>
+      <input class="form-enter assigned" type="text" name="assigned" required>
       <br>
       <input class="submit" type="submit" value="Submit">
     </form>
